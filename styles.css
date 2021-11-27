@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(231, 230, 226);
+}
 
 .container{
 padding: 70px 8%;
@@ -35,4 +38,33 @@ padding: 70px 8%;
     border-radius: 15px 15px;
     text-decoration: none;
 }
+
+#order-section {
+padding-top: 20px;
+text-align: center;
+}
+
+#order-section h1{
+    font-size: 40px;
+    color: rgb(187, 162, 21);
+}
+
+ #order-section .order .btn{
+    font-size: 15px;
+    background-color: rgb(179, 157, 35);
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#order-section .order p{
+    font-size: 20px;
+
+}
+
 
