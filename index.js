@@ -88,15 +88,13 @@ $(document).ready(function(){
             topping_price = 40;
         }
         
-         else if(topping.val() === "Salad"){
+          else if(topping.val() === "Salad"){
             topping_price = 10;
         }
     
-        
-            total = size_price + crust_price + topping_price;
-            var newPizza = new Pizza(size.val() ,type.val() ,crust.val() ,topping.val(), total);
+        total = size_price + crust_price + topping_price;
+        var newPizza = new Pizza(size.val() ,type.val() ,crust.val() ,topping.val(), total);
              
-    
         orders = [...orders, newPizza]
         console.log(newPizza)
         console.log(size_price)
@@ -104,9 +102,24 @@ $(document).ready(function(){
         console.log(topping_price)
         console.log(total)
         console.log(orders)
-        
+
+        if(orders.length === 0){
+            $('#intro').html(`
+            <p>No orders yet.....Bucket is empty</p>`);
+    
+           }
+    
+    else{
+    
+        $('#intro').html(`
+        <p>No of orders: ${orders.length}</p>`);
+    
+    
+    }
+
     })
 
+    
 
 });
 
