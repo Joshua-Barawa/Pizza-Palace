@@ -6,11 +6,8 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(231, 230, 226);
-}
 
-.container{
+.container1{
 padding: 70px 8%;
 }
 
@@ -41,30 +38,45 @@ padding: 70px 8%;
 
 #order-section {
 padding-top: 20px;
-text-align: center;
+
 }
 
 #order-section h1{
     font-size: 40px;
     color: rgb(187, 162, 21);
+    text-align: center;
 }
 
- #order-section .order .btn{
-    font-size: 15px;
-    background-color: rgb(179, 157, 35);
-    padding: 10px 25px;
+
+
+ #order-section  .btn{
+    font-size: 20px;
     color: rgb(255, 255, 255);
-    border-radius: 15px 15px;
     text-decoration: none;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    width: 15%;
+}
+
+#order-section .form{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin-left: 8%;
+
 }
 
 
-#order-section .order p{
-    font-size: 20px;
+#order-section .form select{
+    width: 50%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(224, 223, 219);
+    border-radius: 5px;
+}
 
+#order-section .form select:focus{
+    outline: none;
 }
 
 
