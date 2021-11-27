@@ -8,17 +8,32 @@
 }
 
 .container{
-padding: 0px 10%;
-
+padding: 70px 10%;
 }
 
 .hero{
     padding: 0;
     margin-top: 0px;
     background-image: url("images/gray-background.jpg");
-    background-size: 100%;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     z-index: -1;
-    height: 500px;
+    min-height: 400px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.hero h1:nth-child(2){
+    margin-bottom: 20px;
+     font-size: 50px; 
+}
+
+.hero a{
+    font-size: 25px;
+    background-color: rgb(231, 205, 55);
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px;
+    text-decoration: none;
 }
 
