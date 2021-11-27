@@ -3,13 +3,17 @@ var size = document.getElementById("size")
 var type = document.getElementById("type")
 var crust = document.getElementById("crust")
 var topping = document.getElementById("toppings")
+
 var error1 = document.getElementById("error1")
 var error2 = document.getElementById("error2")
 var error3 = document.getElementById("error3")
 var error4 = document.getElementById("error4")
+
 var size_price = 0;
 var crust_price = 0;
 var topping_price = 0;
+
+var orders = []
 
 function Pizza(size, type, crust, topping) {
     this.size = size;
@@ -20,6 +24,7 @@ function Pizza(size, type, crust, topping) {
   }  
 
 document.getElementById("btn").onclick = function(){
+    var newPizza = new Pizza(size.value ,type.value ,crust.value ,topping.value);
 
     ////////////CHEKIGN SIZE////////////
 if(size.value === "1"){
@@ -85,13 +90,14 @@ error1.innerText = "Please select size"
     }
     
 
-    else{
-        var newPizza = new Pizza(size.value ,type.value ,crust.value ,topping.value);
+       else{
         console.log(newPizza)
         console.log(size_price)
         console.log(crust_price)
-        console.log(topping_price)
-    }
+      console.log(topping_price)
+    
+       }
+      
 
    
 }

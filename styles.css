@@ -75,8 +75,7 @@ padding-top: 20px;
     border-radius: 5px;
 }
 
-#order-section .form select:focus{
-    outline: none;
+
+.form #error1, #error2, #error3, #error4{
+color: red;
 }
-
-
