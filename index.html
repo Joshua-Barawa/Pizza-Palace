@@ -32,16 +32,16 @@
 <div class="form">
 
 <select id="size" class="form-select">
-<option value="1">---Select size---</option>
+<option  value="1">---Select size---</option>
 <option value="Small">Small @ksh 600</option>
 <option value="Medium">Medium @ksh 850</option>
 <option value="Large">Large @ksh 1200</option>
 </select>
-
+<span id="error1"></span>
 
 
 <select id="type" class="form-select">
-    <option>---Select type---</option>
+    <option  value="1">---Select type---</option>
     <option value="Veggie Paneer Pizza">Veggie Paneer Pizza</option>
     <option value="Chicken Gourmet Pizza">Chicken Gourmet Pizza</option>
     <option value="Italian Pizza">Italian Pizza</option>
@@ -49,24 +49,27 @@
     <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
     <option value="Indian Style Pizza">Indian Style Pizza</option>
     </select>
-
+   <span id="error2"></span>
 
 
     <select id="crust" class="form-select">
-        <option>---Select crust---</option>
-        <option value="Crispy">Crispy @ksh 250</option>
-        <option value="Stuffed">Stuffed @ksh 300</option>
-        <option value="Glutten-free">Glutten-free @ksh 400</option>
+        <option value="1">---Select crust---</option>
+        <option value="None">None</option>
+        <option value="Crispy">Crispy @ksh 150</option>
+        <option value="Stuffed">Stuffed @ksh 250</option>
+        <option value="Glutten-free">Glutten-free @ksh 350</option>
         </select>
-
+    <span id="error3"></span>
    
         <select id="toppings" class="form-select">
-            <option>---Select toppings---</option>
+            <option value="1">---Select toppings---</option>
+            <option value="None">None</option>
             <option value="Onions">Onions @ksh 10</option>
             <option value="Tomato">Tomato @ksh 20</option>
             <option value="Cheese">Cheese @ksh 40</option>
             <option value="Salad">Salad @ksh 10</option>
             </select>
+            <span id="error4"></span>
     
             <button type="button" id="btn" class="btn btn-warning">Order</button>
 
