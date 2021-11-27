@@ -1,27 +1,25 @@
 
-var size = document.getElementById("size")
+var size = document.getElementById("size").value
 var type = document.getElementById("type")
 var crust = document.getElementById("crust")
 var topping = document.getElementById("toppings")
+var price = 0;
 
-var prices = {
-    small: {
-     price: 600
-    },
-    large: {
-        price: 850
-       }
+switch(size){
+    case "Small":
+        price = 600;
 }
 
-function Pizza(size, type, crust, topping) {
+function Pizza(size, type, crust, topping, price) {
     this.name = size;
     this.type = type;
     this.crut = crust;
     this.topping = topping
+    this.price = price;
   }  
 
 document.getElementById("btn").onclick = function(){
-    var newPizza = new Pizza(size.value ,type.value ,crust.value ,topping.value);
+    var newPizza = new Pizza(size.value ,type.value ,crust.value ,topping.value, price);
     console.log(newPizza)
-    console.log(size.innerHTML)
+    console.log(price)
 }
