@@ -93,12 +93,29 @@ th ,td{
 
 
   .checkout{
-    margin-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+    justify-content: center;
   }
 
-  .checkout #table, span, #intro, #h, #names, #address, #deliver-btn{
+  .checkout #table, span, #h, #names, #address, #deliver-btn{
     margin-left: 50px;
   }
+
+   #h{
+font-size: 18px;
+color: darkslateblue;
+  }
+
+  input{
+    font-size: 18px;
+   padding: 5px 20px;
+   border: #000 1px soild;
+      }
+
+      input:focus{
+       outline: none;
+      }
+    
 
   .checkout #check-btn{
     margin-left: 50px;
@@ -109,7 +126,7 @@ th ,td{
 
   .order{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       grid-gap: 20px;
   }
 

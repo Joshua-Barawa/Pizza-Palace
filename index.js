@@ -18,6 +18,10 @@ $(document).ready(function(){
     var price = 0;
     var total =0;
     var orders = []
+
+    var name = $('#names');
+    var address = $('#address')
+    
     
     function Pizza(size, type, crust, topping, price) {
         this.size = size;
@@ -123,7 +127,18 @@ $(document).ready(function(){
         if(orders.length === 0){
             alert("Please make an order first")
         }
-        else{ console.log(total + 150)}
+
+        if(name.val() === '' || address.val() === ''){
+            alert('Please fill all fields in the form')
+        }
+
+        else{
+           
+            alert(name.val() +
+             ", Your order has been recieved and ready to be deliver to " + address.val())
+        
+        
+        }
        
     })
 
