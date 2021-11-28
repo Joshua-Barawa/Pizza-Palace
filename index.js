@@ -15,16 +15,16 @@ $(document).ready(function(){
     var size_price = 0;
     var crust_price = 0;
     var topping_price = 0;
-    var total = 0;
-    
+    var price = 0;
+    var total =0;
     var orders = []
     
-    function Pizza(size, type, crust, topping, total) {
+    function Pizza(size, type, crust, topping, price) {
         this.size = size;
         this.type = type;
         this.crust = crust;
         this.topping = topping;
-        this.total = total;
+        this.price = price;
       }  
     
     $("#btn").click(function(){
@@ -72,7 +72,7 @@ $(document).ready(function(){
     
         ////CHECKING TOPPINGS///////////
      if(topping.val() === "1"){
-        error4.html("Please select crust")
+        error4.html("Please select toppings")
         }
         else if(topping.val() === "None"){
             topping_price = 0;
@@ -92,34 +92,24 @@ $(document).ready(function(){
             topping_price = 10;
         }
     
-        total = size_price + crust_price + topping_price;
-        var newPizza = new Pizza(size.val() ,type.val() ,crust.val() ,topping.val(), total);
-             
+        
+        price = size_price + crust_price + topping_price;
+        var newPizza = new Pizza(size.val() ,type.val() ,crust.val() ,topping.val(), price);
+             total = total + price
         orders = [...orders, newPizza]
-        console.log(newPizza)
-        console.log(size_price)
-        console.log(crust_price)
-        console.log(topping_price)
-        console.log(total)
-        console.log(orders)
+        
+        $('#table').append(`
+        <tr>
+        <td>${newPizza.size}</td>
+         <td>${newPizza.type}</td>
+         <td>${newPizza.crust}</td>
+         <td>${newPizza.topping}</td>
+         <td>${newPizza.price}</td>
+        </tr>
+        `)
 
-        if(orders.length === 0){
-            $('#intro').html(`
-            <p>No orders yet.....Bucket is empty</p>`);
-    
-           }
-    
-    else{
-    
-        $('#intro').html(`
-        <p>No of orders: ${orders.length}</p>`);
-    
-    
-    }
-
+        $('#total').html(total)
     })
-
-    
 
 });
 
