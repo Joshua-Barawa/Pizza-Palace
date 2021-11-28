@@ -110,6 +110,7 @@ color: darkslateblue;
     font-size: 18px;
    padding: 5px 20px;
    border: #000 1px soild;
+   margin-bottom: 10px;
       }
 
       input:focus{
@@ -140,4 +141,24 @@ color: darkslateblue;
 
   #operation{
       text-align: center;
+  }
+
+
+  .special{
+      text-align: center;
+  }
+
+  .category{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+      grid-gap: 15px;
+  }
+
+  #pizza{
+      width: 90%;
+      
+  }
+  
+  #title{
+      font-size: 20px;
   }

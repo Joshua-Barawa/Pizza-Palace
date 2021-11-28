@@ -120,7 +120,11 @@ $(document).ready(function(){
         if(orders.length === 0){
             alert("Please make an order first")
         }
-        console.log(total)
+        else{
+            alert("You have successfully placed an order" + '\n' +
+             "Total price: " + total) 
+        
+        }
     })
 
     $('#deliver-btn').click(function(){
@@ -133,10 +137,11 @@ $(document).ready(function(){
         }
 
         else{
-           
+        total = total+150
             alert(name.val() +
-             ", Your order has been recieved and ready to be deliver to " + address.val())
-        
+             ", Your order has been recieved and ready to be deliver to " 
+             + address.val() + '\n' +"Total price: " + total)
+             
         
         }
        
