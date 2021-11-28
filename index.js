@@ -123,7 +123,7 @@ $(document).ready(function(){
         else{
             alert("You have successfully placed an order" + '\n' +
              "Total price: " + total) 
-        
+             location.reload()
         }
     })
 
@@ -142,7 +142,7 @@ $(document).ready(function(){
              ", Your order has been recieved and ready to be deliver to " 
              + address.val() + '\n' +"Total price: " + total)
              
-        
+            location.reload()
         }
        
     })
