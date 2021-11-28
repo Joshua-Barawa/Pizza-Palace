@@ -83,15 +83,20 @@ margin: 10px 20px;
 th ,td{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 40px;
-    font-size: 18px;
+    padding-right: 20px;
+    font-size: 20px;
   }
+
+  #ttl ,#total{
+      font-size: 30px;
+  }
+
 
   .checkout{
     margin-right: 50px;
   }
 
-  .checkout #table, span, #intro{
+  .checkout #table, span, #intro, #h, #names, #address, #deliver-btn{
     margin-left: 50px;
   }
 
@@ -100,11 +105,14 @@ th ,td{
     margin-top: 20px;
     padding: 5px 10px;
     border: none;
-    background-color: rgb(224, 211, 16);
   }
 
   .order{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 20px;
+  }
+
+  #deliver-btn{
+      margin-top: 20px;
   }

@@ -111,6 +111,22 @@ $(document).ready(function(){
         $('#total').html(total)
     })
 
+
+    $('#check-btn').click(function(){
+        if(orders.length === 0){
+            alert("Please make an order first")
+        }
+        console.log(total)
+    })
+
+    $('#deliver-btn').click(function(){
+        if(orders.length === 0){
+            alert("Please make an order first")
+        }
+        else{ console.log(total + 150)}
+       
+    })
+
 });
 
 
