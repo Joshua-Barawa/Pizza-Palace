@@ -18,7 +18,7 @@
 ## Description
 This is website where users can order pizzas to enjoy with their families
 ## Contributors
-* Joshua Barawa- Cars Page
+* Joshua Barawa
 ## Setup/Installation Requirements
 * Clone or download the project from my repo https://github.com/Joshua-Barawa/Pizza-Palace
 * Extract the project 
