@@ -65,7 +65,7 @@ padding-top: 20px;
 
 
 #order-section .form select{
-    width: 50%;
+    width: 80%;
     margin: 10px 20px;
     padding: 10px;
     font-size: 18px;
@@ -132,4 +132,12 @@ color: darkslateblue;
 
   #deliver-btn{
       margin-top: 20px;
+  }
+
+  #steps{
+      width: 80%;
+  }
+
+  #operation{
+      text-align: center;
   }
